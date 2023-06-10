@@ -5,7 +5,7 @@
   "author": "Sindre Beba",
   "license": "MIT",
   "scripts": {
-    "clear": "del -rf dist",
+    "clear": "rm -rf dist",
     "predev": "npm run clear",
     "dev": "parcel src/index.html",
     "prebuild": "npm run clear",
@@ -26,6 +26,7 @@
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-import-resolver-typescript": "^3.5.2",
+    "gh-pages": "^5.0.0",
     "parcel": "^2.8.2",
     "prettier": "^2.8.2",
     "process": "^0.11.10",
