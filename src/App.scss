@@ -1,0 +1,58 @@
+@use 'variables';
+
+/* Custom fonts */
+
+@font-face {
+    font-family: 'BakbakOne';
+    src: url('../assets/fonts/BakbakOne-Regular.ttf');
+}
+
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background-color: variables.$background-color;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styles */
+
+h1 {
+    font-family: BakbakOne;
+    font-size: 64px;
+    margin: 30px 0px;
+}
+
+.gameMessage {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameMessage p {
+    font-family: BakbakOne;
+    font-size: 24px;
+    color: #c85040;
+}
+
+.gameMessage button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: variables.$light-cell-color;
+    border: 2px solid variables.$dark-cell-color;
+    border-radius: 6px;
+    font-family: BakbakOne;
+    font-size: 14px;
+    color: #333;
+}

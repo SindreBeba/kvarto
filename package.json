@@ -1,0 +1,38 @@
+{
+  "name": "kvarto",
+  "version": "1.0.0",
+  "description": "Board game for two players where you line up four pieces with a matching attribute.",
+  "author": "Sindre Beba",
+  "license": "MIT",
+  "scripts": {
+    "clear": "del -rf dist",
+    "predev": "npm run clear",
+    "dev": "parcel src/index.html",
+    "prebuild": "npm run clear",
+    "build": "parcel build src/index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ./dist -b gh-pages",
+    "push": "npm run format && git push & npm run deploy",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "parcel": "^2.8.2",
+    "prettier": "^2.8.2",
+    "process": "^0.11.10",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

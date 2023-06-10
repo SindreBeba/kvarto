@@ -1,0 +1,21 @@
+@use '../variables';
+
+.selectablePieces {
+    max-width: 7*variables.$cell-size;
+    background-color: variables.$light-cell-color;
+    border: 1px solid variables.$dark-cell-color;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selectablePiece {
+    height: variables.$large-game-piece-size + 10;
+    width: variables.$large-game-piece-size + 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

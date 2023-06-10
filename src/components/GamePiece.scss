@@ -1,0 +1,19 @@
+@use '../variables';
+
+.large {
+    height: variables.$large-game-piece-size + 10;
+    width: variables.$large-game-piece-size + 10;
+    padding: 5px;
+}
+
+.small {
+    height: variables.$small-game-piece-size + 10;
+    width: variables.$small-game-piece-size + 10;
+    padding: 5px;
+}
+
+.isSelected {
+    border: 3px solid variables.$selected-color;
+    border-radius: 4px;
+    padding: 2px;
+}
